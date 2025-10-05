@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="page-hero">
+    <h1>Posts in "{{ .Title }}"</h1>
+</div>
+
+<div class="page-content">
+    {{ range .Paginator.Pages }}
+    <article>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p><em>Posted on {{ .Date.Format "January 2, 2006" }}</em></p>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .RelPermalink }}">Read More →</a>
+    </article>
+    <hr style="margin: 2rem 0;">
+    {{ end }}
+</div>
+{{ end }}

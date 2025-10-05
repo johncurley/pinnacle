@@ -1,0 +1,19 @@
+<header>
+    <nav class="site-nav">
+        <a href="{{ .Site.BaseURL }}" class="logo-container">
+            <img src="/images/logo.png" alt="Pinnacle Tech Logo" class="site-logo">
+            <span class="logo-text">Pinnacle Technology</span>
+        </a>
+
+        <input type="checkbox" id="show-nav">
+        <label for="show-nav" id="show-label">☰</label>
+
+        <ul class="nav-ul">
+            {{ range .Site.Menus.main }}
+            <li>
+                <a href="{{ .URL }}" class="nav-links">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

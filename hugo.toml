@@ -1,0 +1,34 @@
+baseURL = "https://www.pinnacletechnologysolutions.co.nz/" # Your future domain
+languageCode = "en-nz"
+title = "Pinnacle Technology Solutions Limited"
+ 
+# A short description of your company
+description = "Innovative SaaS products and mobile applications for SMEs."
+  
+# For the homepage
+[params.homeInfoParams]
+  Title = "Welcome to Pinnacle Technology Solutions"
+  Content = "We build cutting-edge SaaS products and mobile applications to help small and medium-sized enterprises thrive."
+
+# Social media links
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/company/your-company"
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/your-handle"
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/your-org"
+
+# Main menu navigation
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 10
+[[menu.main]]
+  identifier = "about"
+  name = "About Us"
+  url = "/about/"
+  weight = 20

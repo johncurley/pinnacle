@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="page-hero">
+    <h1>All {{ .Title }}</h1>
+</div>
+
+<div class="page-content">
+    <ul>
+        {{ range .Data.Terms.Alphabetical }}
+        <li style="margin-bottom: 0.5rem;">
+            <a href="{{ .Page.Permalink }}" style="font-size: 1.2rem; text-decoration: none;">
+                {{ .Page.Title }}
+            </a>
+            <span style="color: var(--text-muted);">({{ .Count }})</span>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
