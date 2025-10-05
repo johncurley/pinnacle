@@ -1,4 +1,4 @@
-baseURL = "https://www.pinnacletechnologysolutions.co.nz/" # Your future domain
+baseURL = "/" # Your future domain
 languageCode = "en-nz"
 title = "Pinnacle Technology Solutions Limited"
  
